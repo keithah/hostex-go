@@ -532,10 +532,7 @@ func TestIntegration_Listings(t *testing.T) {
 	var testListings []hostex.Listing
 	for _, prop := range props.Properties {
 		for _, ch := range prop.Channels {
-			testListings = append(testListings, hostex.Listing{
-				ChannelType: ch.ChannelType,
-				ListingID:   ch.ListingID,
-			})
+			testListings = append(testListings, hostex.Listing(ch))
 			if len(testListings) >= 2 {
 				break
 			}
