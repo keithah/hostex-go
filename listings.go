@@ -11,14 +11,14 @@ type ListingCalendarResponse struct {
 		ChannelType string `json:"channel_type"`
 		ListingID   string `json:"listing_id"`
 		Calendar    []struct {
-			Date               string `json:"date"`
-			Price              int    `json:"price,omitempty"`
-			Inventory          int    `json:"inventory,omitempty"`
-			Available          bool   `json:"available,omitempty"`
-			MinStay            int    `json:"min_stay,omitempty"`
-			MaxStay            int    `json:"max_stay,omitempty"`
-			ClosedToArrival    bool   `json:"closed_to_arrival,omitempty"`
-			ClosedToDeparture  bool   `json:"closed_to_departure,omitempty"`
+			Date              string `json:"date"`
+			Price             int    `json:"price,omitempty"`
+			Inventory         int    `json:"inventory,omitempty"`
+			Available         bool   `json:"available,omitempty"`
+			MinStay           int    `json:"min_stay,omitempty"`
+			MaxStay           int    `json:"max_stay,omitempty"`
+			ClosedToArrival   bool   `json:"closed_to_arrival,omitempty"`
+			ClosedToDeparture bool   `json:"closed_to_departure,omitempty"`
 		} `json:"calendar"`
 	} `json:"listings"`
 }

@@ -15,13 +15,13 @@ type ReviewsResponse struct {
 
 // ListReviewsParams contains optional parameters for listing reviews
 type ListReviewsParams struct {
-	ReservationCode    string
-	PropertyID         int
-	ReviewStatus       string
-	StartCheckOutDate  string
-	EndCheckOutDate    string
-	Offset             int
-	Limit              int
+	ReservationCode   string
+	PropertyID        int
+	ReviewStatus      string
+	StartCheckOutDate string
+	EndCheckOutDate   string
+	Offset            int
+	Limit             int
 }
 
 // ListReviews retrieves a list of reviews

@@ -9,10 +9,10 @@ import (
 // AvailabilitiesResponse represents the response from listing availabilities
 type AvailabilitiesResponse struct {
 	Listings []struct {
-		ID              int            `json:"id"`
-		ChannelType     string         `json:"channel_type"`
-		ListingID       string         `json:"listing_id"`
-		Availabilities  []Availability `json:"availabilities,omitempty"`
+		ID             int            `json:"id"`
+		ChannelType    string         `json:"channel_type"`
+		ListingID      string         `json:"listing_id"`
+		Availabilities []Availability `json:"availabilities,omitempty"`
 	} `json:"listings"`
 }
 

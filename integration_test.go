@@ -269,8 +269,8 @@ func TestIntegration_ReservationCustomFields(t *testing.T) {
 
 	t.Run("update custom fields", func(t *testing.T) {
 		testFields := map[string]interface{}{
-			"test_field":      "test_value",
-			"test_timestamp":  time.Now().Format(time.RFC3339),
+			"test_field":       "test_value",
+			"test_timestamp":   time.Now().Format(time.RFC3339),
 			"integration_test": "true",
 		}
 

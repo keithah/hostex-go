@@ -28,31 +28,31 @@ type RoomType struct {
 
 // Reservation represents a booking reservation
 type Reservation struct {
-	ReservationCode   string     `json:"reservation_code"`
-	StayCode          string     `json:"stay_code"`
-	ChannelID         string     `json:"channel_id,omitempty"`
-	PropertyID        int        `json:"property_id"`
-	ChannelType       string     `json:"channel_type"`
-	ListingID         string     `json:"listing_id,omitempty"`
-	CheckInDate       string     `json:"check_in_date"`
-	CheckOutDate      string     `json:"check_out_date"`
-	NumberOfGuests    int        `json:"number_of_guests,omitempty"`
-	NumberOfAdults    int        `json:"number_of_adults,omitempty"`
-	NumberOfChildren  int        `json:"number_of_children,omitempty"`
-	NumberOfInfants   int        `json:"number_of_infants,omitempty"`
-	NumberOfPets      int        `json:"number_of_pets,omitempty"`
-	Status            string     `json:"status"`
-	GuestName         string     `json:"guest_name,omitempty"`
-	GuestPhone        string     `json:"guest_phone,omitempty"`
-	GuestEmail        string     `json:"guest_email,omitempty"`
-	CancelledAt       *time.Time `json:"cancelled_at,omitempty"`
-	BookedAt          *time.Time `json:"booked_at,omitempty"`
-	CreatedAt         *time.Time `json:"created_at,omitempty"`
-	Creator           string     `json:"creator,omitempty"`
-	ConversationID    string     `json:"conversation_id,omitempty"`
-	Tags              []string   `json:"tags,omitempty"`
-	CustomFields      any        `json:"custom_fields,omitempty"`
-	InReservationBox  bool       `json:"in_reservation_box,omitempty"`
+	ReservationCode  string     `json:"reservation_code"`
+	StayCode         string     `json:"stay_code"`
+	ChannelID        string     `json:"channel_id,omitempty"`
+	PropertyID       int        `json:"property_id"`
+	ChannelType      string     `json:"channel_type"`
+	ListingID        string     `json:"listing_id,omitempty"`
+	CheckInDate      string     `json:"check_in_date"`
+	CheckOutDate     string     `json:"check_out_date"`
+	NumberOfGuests   int        `json:"number_of_guests,omitempty"`
+	NumberOfAdults   int        `json:"number_of_adults,omitempty"`
+	NumberOfChildren int        `json:"number_of_children,omitempty"`
+	NumberOfInfants  int        `json:"number_of_infants,omitempty"`
+	NumberOfPets     int        `json:"number_of_pets,omitempty"`
+	Status           string     `json:"status"`
+	GuestName        string     `json:"guest_name,omitempty"`
+	GuestPhone       string     `json:"guest_phone,omitempty"`
+	GuestEmail       string     `json:"guest_email,omitempty"`
+	CancelledAt      *time.Time `json:"cancelled_at,omitempty"`
+	BookedAt         *time.Time `json:"booked_at,omitempty"`
+	CreatedAt        *time.Time `json:"created_at,omitempty"`
+	Creator          string     `json:"creator,omitempty"`
+	ConversationID   string     `json:"conversation_id,omitempty"`
+	Tags             []string   `json:"tags,omitempty"`
+	CustomFields     any        `json:"custom_fields,omitempty"`
+	InReservationBox bool       `json:"in_reservation_box,omitempty"`
 }
 
 // CreateReservationData contains data for creating a new reservation
@@ -104,20 +104,20 @@ type Message struct {
 
 // SendMessageData contains data for sending a message
 type SendMessageData struct {
-	Message     string `json:"message,omitempty"`
-	JpegBase64  string `json:"jpeg_base64,omitempty"`
+	Message    string `json:"message,omitempty"`
+	JpegBase64 string `json:"jpeg_base64,omitempty"`
 }
 
 // Review represents a guest or host review
 type Review struct {
-	ReservationCode string       `json:"reservation_code"`
-	PropertyID      int          `json:"property_id"`
-	ChannelType     string       `json:"channel_type"`
-	CheckOutDate    string       `json:"check_out_date"`
-	ReviewStatus    string       `json:"review_status"`
-	HostReview      *ReviewData  `json:"host_review,omitempty"`
-	GuestReview     *ReviewData  `json:"guest_review,omitempty"`
-	HostReply       *ReplyData   `json:"host_reply,omitempty"`
+	ReservationCode string      `json:"reservation_code"`
+	PropertyID      int         `json:"property_id"`
+	ChannelType     string      `json:"channel_type"`
+	CheckOutDate    string      `json:"check_out_date"`
+	ReviewStatus    string      `json:"review_status"`
+	HostReview      *ReviewData `json:"host_review,omitempty"`
+	GuestReview     *ReviewData `json:"guest_review,omitempty"`
+	HostReply       *ReplyData  `json:"host_reply,omitempty"`
 }
 
 // ReviewData contains review details
@@ -223,9 +223,9 @@ type UpdateListingRestrictionsData struct {
 
 // Restriction represents restrictions for a specific date
 type Restriction struct {
-	Date               string `json:"date"`
-	MinStay            int    `json:"min_stay,omitempty"`
-	MaxStay            int    `json:"max_stay,omitempty"`
-	ClosedToArrival    bool   `json:"closed_to_arrival,omitempty"`
-	ClosedToDeparture  bool   `json:"closed_to_departure,omitempty"`
+	Date              string `json:"date"`
+	MinStay           int    `json:"min_stay,omitempty"`
+	MaxStay           int    `json:"max_stay,omitempty"`
+	ClosedToArrival   bool   `json:"closed_to_arrival,omitempty"`
+	ClosedToDeparture bool   `json:"closed_to_departure,omitempty"`
 }

@@ -15,16 +15,16 @@ type ReservationsResponse struct {
 
 // ListReservationsParams contains optional parameters for listing reservations
 type ListReservationsParams struct {
-	ReservationCode    string
-	PropertyID         int
-	Status             string
-	StartCheckInDate   string
-	EndCheckInDate     string
-	StartCheckOutDate  string
-	EndCheckOutDate    string
-	OrderBy            string
-	Offset             int
-	Limit              int
+	ReservationCode   string
+	PropertyID        int
+	Status            string
+	StartCheckInDate  string
+	EndCheckInDate    string
+	StartCheckOutDate string
+	EndCheckOutDate   string
+	OrderBy           string
+	Offset            int
+	Limit             int
 }
 
 // ListReservations retrieves a list of reservations
